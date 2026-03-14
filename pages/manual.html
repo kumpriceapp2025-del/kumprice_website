@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KumPrice User Manual - Complete guide to using KumPrice app">
+    <title>User Manual - KumPrice</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="4" width="14" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <path d="M9 8h6M9 12h6M9 16h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                KumPrice
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#about">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#user-roles">User Roles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#technology">Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#installation">Install</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#support">Support</a></li>
+                    <li class="nav-item"><a class="nav-link" href="manual.html">User Manual</a></li>
+                    <li class="nav-item"><a class="btn btn-primary ms-lg-3" href="https://github.com/kumpriceapp2025-del/KUMPRICE_APKS/releases/download/KUMPRICE_APKS/kumprice_1.0.1.apk" download data-app-package="com.example.kumprice_app" data-download-type="apk" data-smart-link="true">Download App</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center py-5" style="min-height: 40vh;">
+                <div class="col-12 text-center">
+                    <h1 class="display-3 fw-bold mb-3 text-white">User Manual</h1>
+                    <p class="lead text-white mb-0">Complete guide to using KumPrice</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold mb-4">Table of Contents</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#getting-started" class="text-decoration-none">1. Getting Started</a></li>
+                                <li class="mb-2"><a href="#installation" class="text-decoration-none">2. Installation Guide</a></li>
+                                <li class="mb-2"><a href="#first-launch" class="text-decoration-none">3. First Launch Setup</a></li>
+                                <li class="mb-2"><a href="#searching" class="text-decoration-none">4. Searching for Products</a></li>
+                                <li class="mb-2"><a href="#price-comparison" class="text-decoration-none">5. Price Comparison</a></li>
+                                <li class="mb-2"><a href="#store-locator" class="text-decoration-none">6. Using Store Locator</a></li>
+                                <li class="mb-2"><a href="#price-alerts" class="text-decoration-none">7. Setting Price Alerts</a></li>
+                                <li class="mb-2"><a href="#tips" class="text-decoration-none">8. Tips & Tricks</a></li>
+                                <li class="mb-2"><a href="#faq" class="text-decoration-none">9. Frequently Asked Questions</a></li>
+                                <li class="mb-2"><a href="#troubleshooting" class="text-decoration-none">10. Troubleshooting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started -->
+    <section id="getting-started" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">1. Getting Started</h2>
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-3">What is KumPrice?</h4>
+                            <p class="text-muted mb-3">KumPrice is a smart shopping companion app that helps you compare prices, check product availability, and find stores near you. Save time and money by making informed purchasing decisions with real-time data.</p>
+                            
+                            <h5 class="fw-bold mt-4 mb-3">Key Features:</h5>
+                            <ul class="text-muted">
+                                <li class="mb-2">Real-time price comparison across multiple stores</li>
+                                <li class="mb-2">Instant product availability checking</li>
+                                <li class="mb-2">GPS-powered store locator</li>
+                                <li class="mb-2">Price drop alerts and notifications</li>
+                                <li class="mb-2">Offline data caching for quick access</li>
+                                <li class="mb-2">User-friendly interface designed for speed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation -->
+    <section id="installation" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">2. Installation Guide</h2>
+                    
+                    <div class="installation-step mb-4">
+                        <div class="d-flex gap-3">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Download the APK File</h5>
+                                <p class="text-muted mb-0">Click the download button on our website or use the direct link provided. The KumPrice.apk file will be saved to your device's Downloads folder.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="installation-step mb-4">
+                        <div class="d-flex gap-3">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Enable Installation from Unknown Sources</h5>
+                                <p class="text-muted mb-2">For Android 8.0 and above:</p>
+                                <ul class="text-muted">
+                                    <li>Go to Settings → Apps & Notifications</li>
+                                    <li>Tap "Special app access" → "Install unknown apps"</li>
+                                    <li>Select your browser or file manager</li>
+                                    <li>Toggle "Allow from this source" ON</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="installation-step mb-4">
+                        <div class="d-flex gap-3">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Install the Application</h5>
+                                <p class="text-muted mb-2">Navigate to your Downloads folder and tap on KumPrice.apk. You may see a security warning - this is normal for apps not from Google Play Store. Tap "Install" and wait for the process to complete.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="installation-step">
+                        <div class="d-flex gap-3">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Launch and Setup</h5>
+                                <p class="text-muted mb-0">Once installed, tap "Open" or find the KumPrice icon in your app drawer. The app will request necessary permissions on first launch.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- First Launch -->
+    <section id="first-launch" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">3. First Launch Setup</h2>
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Required Permissions</h5>
+                            <p class="text-muted mb-3">When you first open KumPrice, you'll be asked to grant the following permissions:</p>
+                            
+                            <div class="mb-4">
+                                <h6 class="fw-bold">Location Access</h6>
+                                <p class="text-muted mb-0">Required to find nearby stores and show accurate distances. You can choose "While using the app" or "All the time" based on your preference.</p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold">Internet Access</h6>
+                                <p class="text-muted mb-0">Needed to fetch real-time prices, product availability, and store information.</p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold">Storage Access</h6>
+                                <p class="text-muted mb-0">Allows the app to cache data for faster loading and offline viewing of previously searched products.</p>
+                            </div>
+
+                            <div>
+                                <h6 class="fw-bold">Notifications</h6>
+                                <p class="text-muted mb-0">Enable to receive price drop alerts and special deal notifications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Searching Products -->
+    <section id="searching" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">4. Searching for Products</h2>
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">How to Search</h5>
+                            <ol class="text-muted">
+                                <li class="mb-3">Open the KumPrice app</li>
+                                <li class="mb-3">Tap the search bar at the top of the screen</li>
+                                <li class="mb-3">Enter the product name or barcode</li>
+                                <li class="mb-3">Tap the search icon or press enter</li>
+                                <li class="mb-3">View results with prices from different stores</li>
+                            </ol>
+
+                            <h5 class="fw-bold mt-4 mb-3">Search Tips</h5>
+                            <ul class="text-muted">
+                                <li class="mb-2">Use specific product names for better results</li>
+                                <li class="mb-2">Include brand names when possible</li>
+                                <li class="mb-2">Use barcode scanner for exact matches</li>
+                                <li class="mb-2">Check spelling if no results appear</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Comparison -->
+    <section id="price-comparison" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">5. Price Comparison</h2>
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Understanding Price Results</h5>
+                            <p class="text-muted mb-3">After searching, you'll see a list of stores with the product. Each listing shows:</p>
+                            
+                            <ul class="text-muted">
+                                <li class="mb-2"><strong>Store Name:</strong> The retail location</li>
+                                <li class="mb-2"><strong>Price:</strong> Current selling price</li>
+                                <li class="mb-2"><strong>Availability:</strong> In stock or out of stock status</li>
+                                <li class="mb-2"><strong>Distance:</strong> How far the store is from your location</li>
+                                <li class="mb-2"><strong>Last Updated:</strong> When the price was last verified</li>
+                            </ul>
+
+                            <h5 class="fw-bold mt-4 mb-3">Sorting Options</h5>
+                            <p class="text-muted mb-2">Sort results by:</p>
+                            <ul class="text-muted">
+                                <li class="mb-2">Lowest Price</li>
+                                <li class="mb-2">Nearest Location</li>
+                                <li class="mb-2">Availability (In Stock First)</li>
+                                <li class="mb-2">Store Name (A-Z)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Locator -->
+    <section id="store-locator" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">6. Using Store Locator</h2>
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">Find Stores Near You</h5>
+                            <ol class="text-muted">
+                                <li class="mb-3">Tap the "Stores" tab at the bottom navigation</li>
+                                <li class="mb-3">Allow location access if prompted</li>
+                                <li class="mb-3">View the map with store markers</li>
+                                <li class="mb-3">Tap on a marker to see store details</li>
+                                <li class="mb-3">Tap "Get Directions" to open in your maps app</li>
+                            </ol>
+
+                            <h5 class="fw-bold mt-4 mb-3">Store Information</h5>
+                            <p class="text-muted mb-2">Each store listing includes:</p>
+                            <ul class="text-muted">
+                                <li class="mb-2">Store name and branch</li>
+                                <li class="mb-2">Address and contact number</li>
+                                <li class="mb-2">Operating hours</li>
+                                <li class="mb-2">Distance from your location</li>
+                                <li class="mb-2">Current status (Open/Closed)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Alerts -->
+    <section id="price-alerts" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">7. Setting Price Alerts</h2>
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">How to Set an Alert</h5>
+                            <ol class="text-muted">
+                                <li class="mb-3">Search for your desired product</li>
+                                <li class="mb-3">Tap the "Set Alert" button on the product</li>
+                                <li class="mb-3">Choose your target price</li>
+                                <li class="mb-3">Enable notifications</li>
+                                <li class="mb-3">You'll receive a notification when the price drops to or below your target</li>
+                            </ol>
+
+                            <h5 class="fw-bold mt-4 mb-3">Managing Alerts</h5>
+                            <ul class="text-muted">
+                                <li class="mb-2">View all active alerts in the "Alerts" section</li>
+                                <li class="mb-2">Edit or delete alerts as needed</li>
+                                <li class="mb-2">Set alerts for multiple products</li>
+                                <li class="mb-2">Alerts remain active until price is reached or you delete them</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips & Tricks -->
+    <section id="tips" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">8. Tips & Tricks</h2>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold mb-3">💡 Pro Tips</h5>
+                                    <ul class="text-muted mb-0">
+                                        <li class="mb-3"><strong>Compare Before Buying:</strong> Always check at least 3 stores before making a purchase decision</li>
+                                        <li class="mb-3"><strong>Check Stock First:</strong> Call the store to confirm availability before traveling</li>
+                                        <li class="mb-3"><strong>Use Offline Mode:</strong> Previously searched products can be viewed without internet</li>
+                                        <li class="mb-3"><strong>Set Multiple Alerts:</strong> Track prices for items you buy regularly</li>
+                                        <li class="mb-3"><strong>Update Regularly:</strong> Keep the app updated for latest features and store data</li>
+                                        <li class="mb-3"><strong>Share Deals:</strong> Found a great price? Share it with friends using the share button</li>
+                                        <li class="mb-3"><strong>Save Favorites:</strong> Bookmark frequently purchased items for quick access</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">9. Frequently Asked Questions</h2>
+                    
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Is KumPrice free to use?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! KumPrice is completely free to download and use. There are no hidden fees, subscriptions, or in-app purchases.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How often are prices updated?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Prices are updated in real-time as stores report changes. Most prices are refreshed hourly, with high-demand items updated more frequently.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can I use KumPrice offline?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, but with limited functionality. You can view previously searched products and cached data offline, but new searches and price updates require an internet connection.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Which stores are included?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    KumPrice includes over 500 stores across major retail chains, supermarkets, and local shops. The store network is continuously expanding.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Is my location data safe?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely. Your location data is only used to find nearby stores and is never shared with third parties. You can disable location services at any time in your device settings.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    How do I report incorrect prices?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Tap the "Report" button on any product listing to submit a price correction. Our team reviews reports within 24 hours and updates the database accordingly.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Troubleshooting -->
+    <section id="troubleshooting" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">10. Troubleshooting</h2>
+                    
+                    <div class="accordion" id="troubleshootAccordion">
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#trouble1">
+                                    App Won't Open
+                                </button>
+                            </h2>
+                            <div id="trouble1" class="accordion-collapse collapse show" data-bs-parent="#troubleshootAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-2"><strong>Solution:</strong></p>
+                                    <ul class="mb-0">
+                                        <li>Clear app cache: Settings → Apps → KumPrice → Storage → Clear Cache</li>
+                                        <li>Restart your device</li>
+                                        <li>Reinstall the app if issue persists</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#trouble2">
+                                    Location Not Working
+                                </button>
+                            </h2>
+                            <div id="trouble2" class="accordion-collapse collapse" data-bs-parent="#troubleshootAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-2"><strong>Solution:</strong></p>
+                                    <ul class="mb-0">
+                                        <li>Enable GPS in device settings</li>
+                                        <li>Grant location permission to KumPrice</li>
+                                        <li>Turn off battery saver mode</li>
+                                        <li>Try toggling Airplane mode on and off</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#trouble3">
+                                    Prices Not Loading
+                                </button>
+                            </h2>
+                            <div id="trouble3" class="accordion-collapse collapse" data-bs-parent="#troubleshootAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-2"><strong>Solution:</strong></p>
+                                    <ul class="mb-0">
+                                        <li>Check your internet connection</li>
+                                        <li>Pull down to refresh the page</li>
+                                        <li>Clear app cache and restart</li>
+                                        <li>Update to the latest version</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#trouble4">
+                                    Notifications Not Working
+                                </button>
+                            </h2>
+                            <div id="trouble4" class="accordion-collapse collapse" data-bs-parent="#troubleshootAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-2"><strong>Solution:</strong></p>
+                                    <ul class="mb-0">
+                                        <li>Enable notifications in Settings → Apps → KumPrice → Notifications</li>
+                                        <li>Disable battery optimization for KumPrice</li>
+                                        <li>Check Do Not Disturb settings</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mt-4">
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold mb-3">Still Need Help?</h5>
+                            <p class="text-muted mb-3">If your issue isn't resolved, contact our support team</p>
+                            <a href="https://www.facebook.com/profile.php?id=61583931190351" class="btn btn-primary">Contact Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-3">
+                        <svg class="brand-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5" y="4" width="14" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 8h6M9 12h6M9 16h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        KumPrice
+                    </h5>
+                    <p class="text-white">Your trusted companion for smart shopping and better deals.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="manual.html" class="text-white text-decoration-none">User Manual</a></li>
+                        <li class="mb-2"><a href="index.html#features" class="text-white text-decoration-none">Features</a></li>
+                        <li class="mb-2"><a href="index.html#installation" class="text-white text-decoration-none">Installation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="fw-bold mb-3">Support</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#troubleshooting" class="text-white text-decoration-none">Troubleshooting</a></li>
+                        <li class="mb-2"><a href="#faq" class="text-white text-decoration-none">FAQs</a></li>
+                        <li class="mb-2"><a href="index.html#download" class="text-white text-decoration-none">Download</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-white">
+                <p class="mb-0">&copy; 2025 KumPrice. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 19V5m0 0l-7 7m7-7l7 7"/>
+        </svg>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
