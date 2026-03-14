@@ -92,18 +92,6 @@ function handleSmartDownload(event, downloadUrl) {
     return true;
 }
 
-// Apply smart download to all APK download links
-document.addEventListener('DOMContentLoaded', function () {
-    const downloadLinks = document.querySelectorAll('a[href*=".apk"], a[href*="download"]');
-    downloadLinks.forEach(link => {
-        if (link.href.includes('.apk') || link.textContent.toLowerCase().includes('download')) {
-            link.addEventListener('click', function (event) {
-                handleSmartDownload(event, this.href);
-            });
-        }
-    });
-});
-
 // Animate elements on scroll
 const observerOptions = {
     threshold: 0.1,
@@ -311,8 +299,8 @@ downloadBtn.addEventListener('click', function () {
 
     // Start APK download
     const downloadLink = document.createElement('a');
-    downloadLink.href = 'https://github.com/kumpriceapp2025-del/KUMPRICE_APKS/releases/download/KUMPRICE_APKS/kumprice_1.0.1.apk';
-    downloadLink.download = 'kumprice_1.0.1.apk';
+    downloadLink.href = 'https://github.com/kumpriceapp2025-del/KUMPRICE_APKS/releases/download/KUMPRICE_APKS/kumprice_1.0.2.apk';
+    downloadLink.download = 'kumprice_1.0.2.apk';
 
     document.body.appendChild(downloadLink);
     downloadLink.click();
