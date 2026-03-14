@@ -1,6 +1,6 @@
 # KumPrice Website
 
-A promotional website for the KumPrice mobile application - a capstone project for "Centralized Mobile Application for Local Entrepreneur Inventory Management and Consumer Price Viewing."
+A promotional website for the KumPrice mobile application — a capstone project titled “KumPrice: A Centralized Mobile Marketplace Platform for Local Small and Medium Enterprises (SMEs).”
 
 ## Project Structure
 
@@ -47,7 +47,7 @@ kumprice_website/
 
 ## Capstone Project Details
 
-- **Project**: Centralized Mobile Application for Local Entrepreneur Inventory Management and Consumer Price Viewing
-- **Version**: 1.0.0
+- **Project**: KumPrice: A Centralized Mobile Marketplace Platform for Local Small and Medium Enterprises (SMEs)
+- **Version**: 1.0.2
 - **Release**: January 2026
 - **Academic Purpose**: Prototype for educational demonstration
