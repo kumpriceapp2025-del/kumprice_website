@@ -1,1 +1,0 @@
-# kumprice_website
