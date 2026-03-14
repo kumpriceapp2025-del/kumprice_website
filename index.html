@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="KumPrice - A Centralized Mobile Marketplace Platform for Local Small and Medium Enterprises (SMEs) and Community Consumers. Capstone Project 2026.">
+    <title>KumPrice - A Centralized Mobile Marketplace Platform for Local Small and Medium Enterprises (SMEs) and
+        Community Consumers.</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <!-- REPLACE WITH -->
+            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="#home">
+                <img src="assets/img/logo.png" alt="KumPrice Logo"
+                    style="width:90px; height:90px; object-fit:contain; margin-top:-15px; margin-bottom:-15px;">
+                <span style="font-family:'Poppins',sans-serif; font-size:1.5rem; line-height:1; margin-left:-4px;">
+                    <span style="color:#8BC34A; font-weight:900;">KUM</span><span
+                        style="color:#2A4F3C; font-weight:900;">PRICE</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#user-roles">User Roles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#technology">Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#installation">Install</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/manual.html">User Manual</a></li>
+                    <li class="nav-item"><button class="btn btn-primary ms-lg-3" data-bs-toggle="modal"
+                            data-bs-target="#termsModal">Download App</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100 py-5">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="hero-content">
+                        <div class="mb-2">
+                            <h1 class="fw-bold text-white mb-2"
+                                style="font-family:'Poppins',sans-serif; font-size:3.8rem; line-height:1.1;">
+                                Shop Precise.
+                            </h1>
+                            <p class="text-white mb-4" style="font-size:1.2rem; opacity:0.85; font-weight:400;">
+                                Locate nearby stores in your area.
+                            </p>
+                        </div>
+                        <p class="fs-6 fs-md-5 mb-4 text-white">Empowering Small & Medium Enterprises with real-time
+                            inventory management while providing consumers with transparent price comparison across
+                            local stores.</p>
+                        <div class="mb-4">
+                            <button
+                                class="btn btn-primary btn-lg w-100 d-flex align-items-center justify-content-center"
+                                style="background-color: #4A90E2;" data-bs-toggle="modal" data-bs-target="#termsModal">
+                                <svg class="me-2" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path d="M12 5v13m0 0l-4-4m4 4l4-4M5 21h14" />
+                                </svg>
+                                Download APK (141 MB)
+                            </button>
+                        </div>
+                        <div class="d-flex gap-4 flex-wrap">
+                            <div class="stat-item">
+                                <div class="h2 fw-bold mb-0 text-white">SMEs</div>
+                                <small class="text-white-50">Target Users</small>
+                            </div>
+                            <div class="stat-item">
+                                <div class="h2 fw-bold mb-0 text-white">Real-time</div>
+                                <small class="text-white-50">Price Sync</small>
+                            </div>
+                            <div class="stat-item">
+                                <div class="h2 fw-bold mb-0 text-white">Cloud</div>
+                                <small class="text-white-50">Centralized</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="phone-mockup mx-auto">
+                        <div class="phone-frame">
+                            <div class="phone-screen" style="height: 100%; position: relative; overflow: hidden;">
+                                <!-- Slideshow -->
+                                <div class="phone-slideshow">
+                                    <div class="slides-track">
+                                        <img class="slide" src="assets/img/kumprice_content.jpg" alt="Screen 1">
+                                        <img class="slide" src="assets/img/2.jpg" alt="Screen 2">
+                                        <img class="slide" src="assets/img/3.jpg" alt="Screen 3">
+                                        <img class="slide" src="assets/img/4.jpg" alt="Screen 4">
+                                        <img class="slide" src="assets/img/5.jpg" alt="Screen 5">
+                                        <img class="slide" src="assets/img/6.jpg" alt="Screen 6">
+                                        <img class="slide" src="assets/img/7.jpg" alt="Screen 7">
+                                        <img class="slide" src="assets/img/8.jpg" alt="Screen 8">
+                                    </div>
+                                </div>
+                                <!-- Dots -->
+                                <div class="slide-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">System Overview</h2>
+                    <p class="lead text-muted">A capstone-developed system connecting local Small & Medium Enterprises
+                        (SMEs) with community consumers through a centralized mobile platform for real-time product and
+                        price management.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 text-center p-4">
+                        <h4 class="fw-bold mb-3">Project Objective</h4>
+                        <p class="text-muted">The project aims to develop a centralized mobile platform that allows
+                            local SMEs to digitally present their product prices and availability while enabling
+                            consumers to easily compare prices across nearby stores before making purchasing decisions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 text-center p-4">
+                        <h4 class="fw-bold mb-3">Target Beneficiaries</h4>
+                        <p class="text-muted">Local SMEs benefit from increased digital visibility and easier product
+                            information management, while consumers gain access to real-time price comparison and
+                            product availability from participating neighborhood stores.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 text-center p-4">
+                        <h4 class="fw-bold mb-3">Real-world Impact</h4>
+                        <p class="text-muted">The system promotes price transparency, supports local businesses by
+                            increasing their digital presence, and empowers consumers to make more informed purchasing
+                            decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Key System Functionalities</h2>
+                    <p class="lead text-muted">Comprehensive features addressing both SME management needs and consumer
+                        requirements</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <h4 class="fw-bold mb-3">Centralized Mobile Platform</h4>
+                        <p class="text-muted">Store owners can add, update, and manage product listings including prices
+                            and availability, allowing consumers to view accurate product information across
+                            participating stores.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <h4 class="fw-bold mb-3">Real-Time Price Comparison</h4>
+                        <p class="text-muted">Consumers can compare product prices from multiple participating local
+                            stores in real time, helping them choose the most convenient and affordable option.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <h4 class="fw-bold mb-3">QR Code Integration</h4>
+                        <p class="text-muted">QR scanning allows users to instantly access store page for product
+                            details and price information within the application.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <h4 class="fw-bold mb-3">Location-Based Services</h4>
+                        <p class="text-muted">Consumers can locate nearby participating stores using GPS-based mapping
+                            and view available products and prices.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <h4 class="fw-bold mb-3">System Administration Dashboard</h4>
+                        <p class="text-muted">The administrative panel allows system administrators to manage registered
+                            stores, monitor product listings, and oversee overall platform activity.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <h4 class="fw-bold mb-3">Offline Sync</h4>
+                        <p class="text-muted">The application supports offline viewing of previously accessed product
+                            data and automatically synchronizes information once internet connectivity is restored.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Roles Section -->
+    <section id="user-roles" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">System User Roles</h2>
+                    <p class="lead text-muted">Designed for multiple stakeholder types with role-specific
+                        functionalities</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                        <circle cx="8.5" cy="7" r="4" />
+                                        <polyline points="17,11 19,13 23,9" />
+                                    </svg>
+                                </div>
+                                <h4 class="fw-bold mb-0">SME Store Owners</h4>
+                            </div>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><span class="text-primary me-2">✓</span>Manage product listings</li>
+                                <li class="mb-2"><span class="text-primary me-2">✓</span>Update product prices</li>
+                                <li class="mb-2"><span class="text-primary me-2">✓</span>Indicate product availability
+                                </li>
+                                <li class="mb-2"><span class="text-primary me-2">✓</span>Manage store profile
+                                    information</li>
+                                <li class="mb-2"><span class="text-primary me-2">✓</span>Increase digital visibility to
+                                    consumers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-accent text-white rounded-circle p-3 me-3">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-3-3.87" />
+                                        <path d="M4 21v-2a4 4 0 0 1 3-3.87" />
+                                        <circle cx="12" cy="7" r="4" />
+                                    </svg>
+                                </div>
+                                <h4 class="fw-bold mb-0">Consumers</h4>
+                            </div>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><span class="text-accent me-2">✓</span>Search products</li>
+                                <li class="mb-2"><span class="text-accent me-2">✓</span>Compare prices from nearby
+                                    stores</li>
+                                <li class="mb-2"><span class="text-accent me-2">✓</span>Check product availability</li>
+                                <li class="mb-2"><span class="text-accent me-2">✓</span>Locate stores using map services
+                                </li>
+                                <li class="mb-2"><span class="text-accent me-2">✓</span>Scan QR codes for product
+                                    details</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section id="technology" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Technology Stack</h2>
+                    <p class="lead text-muted">Built with modern, scalable technologies for optimal performance</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="tech-icon mb-3">
+                            <i class="fab fa-android text-primary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="fw-bold">Mobile Development</h5>
+                        <p class="text-muted small">Android-based mobile application designed for accessibility and ease
+                            of use among consumers and local SMEs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="tech-icon mb-3">
+                            <i class="fas fa-cloud text-primary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="fw-bold">Cloud Infrastructure</h5>
+                        <p class="text-muted small">Scalable cloud backend with real-time sync</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="tech-icon mb-3">
+                            <i class="fas fa-database text-primary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="fw-bold">Database Management</h5>
+                        <p class="text-muted small">Centralized data storage with backup systems</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="tech-icon mb-3">
+                            <i class="fas fa-qrcode text-primary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="fw-bold">QR Integration</h5>
+                        <p class="text-muted small">Advanced scanning with offline capabilities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="installation" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Easy Installation</h2>
+                    <p class="lead text-muted">Get started in just a few simple steps</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="installation-step mb-4">
+                        <div class="d-flex gap-3">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Download the APK File</h5>
+                                <p class="text-muted mb-2">Click the download button at the top of this page. The
+                                    KumPrice application file (kumprice_1.0.1.apk, 141MB) will be saved to your device's
+                                    Downloads folder. Wait for the download to complete before proceeding to the next
+                                    step.</p>
+                                <div class="detail-note">File size: 141MB only • No registration required • Safe and
+                                    verified</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="installation-step mb-4">
+                        <div class="d-flex gap-3">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Enable Unknown Sources Installation</h5>
+                                <p class="text-muted mb-2">Before installing, allow installations from unknown sources:
+                                </p>
+                                <ul class="text-muted mb-2" style="font-size: 0.9rem;">
+                                    <li>Open <strong>Settings</strong> on your Android device</li>
+                                    <li>Navigate to <strong>Security</strong> or <strong>Privacy</strong></li>
+                                    <li>Find and enable <strong>"Install unknown apps"</strong> or <strong>"Unknown
+                                            sources"</strong></li>
+                                    <li>Select your <strong>browser</strong> or <strong>file manager</strong> and toggle
+                                        it ON</li>
+                                </ul>
+                                <div class="detail-note">Note: You can disable this setting after installation for
+                                    security purposes</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="installation-step mb-4">
+                        <div class="d-flex gap-3">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Install the Application</h5>
+                                <p class="text-muted mb-2">Locate the downloaded APK file in your Downloads folder or
+                                    notification panel. Tap on <strong>kumprice_1.0.1.apk</strong> to begin
+                                    installation. Review the permissions shown and tap Install. The installation process
+                                    typically takes 10 to 30 seconds.</p>
+                                <div class="detail-note">Important: If you see a Play Protect warning, tap "More
+                                    details" then "Install anyway" - the app is safe and verified</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="installation-step">
+                        <div class="d-flex gap-3">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h5 class="fw-bold mb-2">Launch and Setup</h5>
+                                <p class="text-muted mb-2">After installation completes, tap Open or find the KumPrice
+                                    icon in your app drawer. On first launch, you will be prompted to grant the
+                                    following permissions:</p>
+                                <ul class="text-muted mb-2" style="font-size: 0.9rem;">
+                                    <li><strong>Location Access:</strong> Required to find stores near your current
+                                        location</li>
+                                    <li><strong>Internet Access:</strong> Needed to fetch real-time prices and product
+                                        availability</li>
+                                    <li><strong>Storage Access:</strong> Allows caching of data for offline viewing</li>
+                                </ul>
+                                <div class="detail-note">Once permissions are granted, you can immediately start
+                                    searching for products and comparing prices</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-4">System Requirements</h5>
+                            <div class="requirement-item mb-3">
+                                <div class="d-flex align-items-start gap-2">
+                                    <div>
+                                        <div class="fw-semibold">Android Version</div>
+                                        <small class="text-muted">Android 5.0 or higher</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="requirement-item mb-3">
+                                <div class="d-flex align-items-start gap-2">
+                                    <div>
+                                        <div class="fw-semibold">Storage Space</div>
+                                        <small class="text-muted">Minimum 50 MB free</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="requirement-item mb-3">
+                                <div class="d-flex align-items-start gap-2">
+                                    <div>
+                                        <div class="fw-semibold">Internet</div>
+                                        <small class="text-muted">WiFi or mobile data</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="requirement-item">
+                                <div class="d-flex align-items-start gap-2">
+                                    <div>
+                                        <div class="fw-semibold">GPS/Location</div>
+                                        <small class="text-muted">For store locator</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-4">Required Permissions</h5>
+                            <div class="permission-item mb-3">
+                                <div class="fw-semibold mb-1">Location Access</div>
+                                <small class="text-muted">Find nearby stores and show distance</small>
+                            </div>
+                            <div class="permission-item mb-3">
+                                <div class="fw-semibold mb-1">Internet Access</div>
+                                <small class="text-muted">Fetch real-time prices and inventory</small>
+                            </div>
+                            <div class="permission-item mb-3">
+                                <div class="fw-semibold mb-1">Storage Access</div>
+                                <small class="text-muted">Cache data for offline viewing</small>
+                            </div>
+                            <div class="permission-item">
+                                <div class="fw-semibold mb-1">Notifications</div>
+                                <small class="text-muted">Send price alerts and updates</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support/Troubleshooting Section -->
+    <section id="support" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Troubleshooting Guide</h2>
+                    <p class="lead text-muted">Common installation issues and solutions</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="troubleshoot-card">
+                        <h5 class="fw-bold mb-3">Installation Blocked</h5>
+                        <p class="text-muted mb-2"><strong>Problem:</strong> "For your security, your phone is not
+                            allowed to install unknown apps from this source."</p>
+                        <p class="text-muted mb-0"><strong>Solution:</strong> Go to Settings → Security → Install
+                            unknown apps → Select your browser/file manager → Toggle "Allow from this source" ON.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="troubleshoot-card">
+                        <h5 class="fw-bold mb-3">App Not Installed</h5>
+                        <p class="text-muted mb-2"><strong>Problem:</strong> Installation fails with "App not installed"
+                            error.</p>
+                        <p class="text-muted mb-0"><strong>Solution:</strong> Ensure you have enough storage space (at
+                            least 115MB free). Clear cache in Settings → Storage. Download the APK again if it was
+                            corrupted.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="troubleshoot-card">
+                        <h5 class="fw-bold mb-3">App Keeps Crashing</h5>
+                        <p class="text-muted mb-2"><strong>Problem:</strong> App crashes immediately after opening.</p>
+                        <p class="text-muted mb-0"><strong>Solution:</strong> Clear app data in Settings → Apps →
+                            KumPrice → Storage → Clear Data. Restart your device. Ensure your Android version meets
+                            minimum requirements (6.0+).</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="troubleshoot-card">
+                        <h5 class="fw-bold mb-3">Location Not Working</h5>
+                        <p class="text-muted mb-2"><strong>Problem:</strong> Store locator feature not finding nearby
+                            stores.</p>
+                        <p class="text-muted mb-0"><strong>Solution:</strong> Enable Location/GPS in Settings. Grant
+                            location permission to KumPrice in Settings → Apps → KumPrice → Permissions → Location →
+                            Allow all the time or While using the app.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="troubleshoot-card">
+                        <h5 class="fw-bold mb-3">Unable to Load Data</h5>
+                        <p class="text-muted mb-2"><strong>Problem:</strong> Prices and availability not showing.</p>
+                        <p class="text-muted mb-0"><strong>Solution:</strong> Check your internet connection. Ensure the
+                            app has internet permission. Try switching between WiFi and mobile data. Clear app cache and
+                            restart.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="troubleshoot-card">
+                        <h5 class="fw-bold mb-3">Security Warning</h5>
+                        <p class="text-muted mb-2"><strong>Problem:</strong> Google Play Protect warning during
+                            installation.</p>
+                        <p class="text-muted mb-0"><strong>Solution:</strong> This is normal for apps not from Play
+                            Store. Tap "More details" → "Install anyway" if you trust the source. KumPrice is safe and
+                            scans are regularly performed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA Section -->
+    <section id="download" class="cta-section py-5">
+        <div class="container py-5 text-center">
+            <h2 class="display-4 fw-bold text-white mb-4">Ready to Start Saving?</h2>
+            <p class="lead text-white mb-5">Download KumPrice now and experience the future of smart shopping and
+                inventory management</p>
+
+            <div class="row justify-content-center g-4 mb-5">
+                <div class="col-md-6">
+                    <div class="download-card">
+                        <h5 class="text-white fw-bold mb-3">Android</h5>
+                        <button class="btn btn-light btn-lg w-100 d-flex align-items-center justify-content-center mb-3"
+                            data-bs-toggle="modal" data-bs-target="#termsModal">
+                            <svg class="me-2" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5">
+                                <path d="M12 5v13m0 0l-4-4m4 4l4-4M5 21h14" />
+                            </svg>
+                            Download APK (Version 1.0.1)
+                        </button>
+                        <small class="text-white-50">Released January 2026</small>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="download-card">
+                        <h5 class="text-white fw-bold mb-3">iOS</h5>
+                        <button
+                            class="btn btn-outline-light btn-lg w-100 d-flex align-items-center justify-content-center mb-3"
+                            disabled>
+                            <svg class="me-2" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                                <path d="M20 12a8 8 0 1 1-16 0" />
+                                <path d="M12 12v5" />
+                            </svg>
+                            Coming to App Store
+                        </button>
+                        <small class="text-white-50">iOS 12.0 or higher</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                <div class="text-white"><span class="me-2">✓</span>Works Offline with Auto-Sync</div>
+                <div class="text-white"><span class="me-2">✓</span>QR Code Scanner Included</div>
+                <div class="text-white"><span class="me-2">✓</span>Secure Cloud Backup</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">
+                        <svg class="brand-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5" y="4" width="14" height="18" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M9 8h6M9 12h6M9 16h4" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                        KumPrice
+                    </h5>
+                    <p class="text-white-50">A Centralized Mobile Marketplace Platform for Local Small and Medium
+                        Enterprises (SMEs) and Community Consumers.</p>
+                    <p class="text-white-50 small">Capstone Project 2026</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white-50 text-decoration-none">System Overview</a>
+                        </li>
+                        <li class="mb-2"><a href="#features" class="text-white-50 text-decoration-none">Features</a>
+                        </li>
+                        <li class="mb-2"><a href="#user-roles" class="text-white-50 text-decoration-none">User Roles</a>
+                        </li>
+                        <li class="mb-2"><a href="#technology" class="text-white-50 text-decoration-none">Technology
+                                Stack</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Support</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#installation" class="text-white-50 text-decoration-none">Installation
+                                Guide</a></li>
+                        <li class="mb-2"><a href="#support"
+                                class="text-white-50 text-decoration-none">Troubleshooting</a></li>
+                        <li class="mb-2"><a href="/manual.html" class="text-white-50 text-decoration-none">User
+                                Manual</a></li>
+                        <li class="mb-2"><a href="#download" class="text-white-50 text-decoration-none">Download</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Project Info</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><span class="text-white-50">Version 1.0.1</span></li>
+                        <li class="mb-2"><span class="text-white-50">January 2026</span></li>
+                        <li class="mb-2"><span class="text-white-50">Academic Capstone</span></li>
+                        <li class="mb-2"><span class="text-white-50">SME & Consumer Focus</span></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-white">
+                <p class="mb-0">&copy; 2025 KumPrice. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 19V5m0 0l-7 7m7-7l7 7" />
+        </svg>
+    </button>
+
+    <!-- Terms and Conditions Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termsModalLabel">Terms and Conditions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="terms-container"
+                        style="max-height: 50vh; overflow-y: auto; padding: 1rem; border: 1px solid #dee2e6; border-radius: 8px; background-color: #f8f9fa;">
+                        <div class="terms-container"
+                            style="max-height: 50vh; overflow-y: auto; padding: 1rem; border: 1px solid #dee2e6; border-radius: 8px; background-color: #f8f9fa;">
+
+                            <p class="mb-4">
+                                Welcome to <strong>KumPrice</strong>. By downloading, installing, or using this mobile
+                                application, you agree to the following Terms and Conditions. These guidelines are
+                                established to ensure transparency, security, and responsible use of the platform for
+                                both consumers and store owners.
+                            </p>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">1. Accuracy of Information</h6>
+                                <p>
+                                    Users must provide accurate, complete, and updated information when creating an
+                                    account or interacting with the system. Any false, misleading, or incomplete
+                                    information may result in account restriction, suspension, or permanent removal from
+                                    the platform.
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">2. Store Owner Responsibilities</h6>
+                                <p>
+                                    Store owners are responsible for ensuring that all submitted documents, including
+                                    valid identification and business permits, are authentic. They must also maintain
+                                    accurate and updated product listings, prices, descriptions, and images within the
+                                    system.
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">3. User Responsibilities</h6>
+                                <p>
+                                    All users must utilize the KumPrice platform ethically and responsibly. Users must
+                                    not create fake accounts, impersonate other individuals, upload deceptive
+                                    information, misuse store data, or perform activities that violate intellectual
+                                    property rights under RA 8293.
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">4. Prohibited Activities</h6>
+                                <ul>
+                                    <li>Uploading fake identification or business permits</li>
+                                    <li>Tampering with store or product information</li>
+                                    <li>Attempting to exploit or hack system vulnerabilities</li>
+                                    <li>Uploading malicious or harmful files</li>
+                                    <li>Misrepresenting store ownership or identity</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">5. Data Privacy and Security</h6>
+                                <p>
+                                    KumPrice complies with the Data Privacy Act of 2012 (RA 10173). Personal information
+                                    collected from users is used solely for system functionality, account verification,
+                                    and service improvement. Sensitive documents are stored securely and accessed only
+                                    by authorized administrators.
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">6. Store Verification Process</h6>
+                                <p>
+                                    Store owners submitting registration requests agree to undergo a verification
+                                    process conducted by system administrators. This process includes validating
+                                    submitted documents, reviewing store details, and confirming location accuracy
+                                    before approval.
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">7. Pricing Transparency</h6>
+                                <p>
+                                    KumPrice does not control or regulate product pricing. All prices displayed in the
+                                    system are provided directly by store owners. KumPrice is not responsible for price
+                                    discrepancies, sudden price changes, or markups implemented by individual stores.
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">8. Administrative Rights</h6>
+                                <p>
+                                    System administrators reserve the right to suspend or remove accounts that violate
+                                    platform policies, remove misleading or harmful content, review system activities
+                                    for security purposes, and implement policy or system changes when necessary.
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">9. Legal Compliance</h6>
+                                <ul>
+                                    <li>RA 10173 – Data Privacy Act of 2012</li>
+                                    <li>RA 10175 – Cybercrime Prevention Act of 2012</li>
+                                    <li>RA 8792 – E-Commerce Act</li>
+                                    <li>RA 7394 – Consumer Act of the Philippines</li>
+                                    <li>RA 11032 – Ease of Doing Business Act</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">10. Limitation of Liability</h6>
+                                <p>
+                                    KumPrice serves as an information platform for product prices and availability. The
+                                    system developers are not liable for incorrect product information, delayed updates,
+                                    or any decisions made by users based on displayed information.
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">11. No Direct Sales Disclaimer</h6>
+                                <p>
+                                    KumPrice does not facilitate purchases, payments, or delivery services. All
+                                    transactions occur directly between consumers and store owners outside of the
+                                    application.
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">12. Location Services</h6>
+                                <p>
+                                    The application may request location access to help users identify nearby stores.
+                                    Users may enable or disable this feature at any time through device settings.
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">13. Data Retention</h6>
+                                <p>
+                                    User and store data will be retained for as long as the account remains active.
+                                    Users may request account deletion, after which data will be removed in accordance
+                                    with applicable privacy and security policies.
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">14. Changes to Terms</h6>
+                                <p>
+                                    KumPrice reserves the right to update or modify these Terms and Conditions at any
+                                    time. Continued use of the application constitutes acceptance of any updated
+                                    policies.
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-primary">15. Contact and Support</h6>
+                                <p>
+                                    For inquiries, concerns, or support requests, users may contact the KumPrice team
+                                    at:
+                                    <br><br>
+                                    <strong>kumprice.app.2025@gmail.com</strong>
+                                </p>
+                            </div>
+
+                            <div class="mb-3">
+                                <h6 class="fw-bold text-primary">16. Academic Use Disclaimer</h6>
+                                <p>
+                                    KumPrice is developed as an academic capstone project. The application serves as a
+                                    prototype system designed for research and educational purposes and is not intended
+                                    for large-scale commercial deployment.
+                                </p>
+                            </div>
+
+                            <p class="fw-semibold text-center mt-3">
+                                By continuing to use KumPrice, you confirm that you have read, understood, and agreed to
+                                these Terms and Conditions.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="mt-4 p-3 bg-light border rounded">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="agreeCheckbox">
+                            <label class="form-check-label fw-semibold" for="agreeCheckbox">
+                                I have read, understood, and agree to the Terms and Conditions
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <div>
+                        <button type="button" class="btn btn-primary" id="downloadBtn" disabled>Download APK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <!-- Terms and Conditions Modal Handler -->
+    <script>
+        const agreeCheckbox = document.getElementById('agreeCheckbox');
+        const acceptBtn = document.getElementById('acceptTerms');
+        const downloadBtn = document.getElementById('downloadBtn');
+
+        // Enable Accept button when checkbox is checked
+        agreeCheckbox.addEventListener('change', function () {
+            acceptBtn.disabled = !this.checked;
+            if (!this.checked) {
+                downloadBtn.disabled = true;
+                acceptBtn.textContent = 'Accept Terms';
+                acceptBtn.classList.remove('btn-secondary');
+                acceptBtn.classList.add('btn-success');
+            }
+        });
+
+        // Handle Accept Terms button
+        acceptBtn.addEventListener('click', function () {
+            if (agreeCheckbox.checked) {
+                // Enable download button and change accept button state
+                downloadBtn.disabled = false;
+                acceptBtn.textContent = 'Terms Accepted ✓';
+                acceptBtn.classList.remove('btn-success');
+                acceptBtn.classList.add('btn-secondary');
+                acceptBtn.disabled = true;
+            }
+        });
+
+        // Handle Download button
+        downloadBtn.addEventListener('click', function () {
+            // Close the modal
+            const modal = bootstrap.Modal.getInstance(document.getElementById('termsModal'));
+            modal.hide();
+
+            // Start the download
+            const downloadLink = document.createElement('a');
+            downloadLink.href = 'https://github.com/kumpriceapp2025-del/KUMPRICE_APKS/releases/download/KUMPRICE_APKS/kumprice_1.0.1.apk';
+            downloadLink.download = 'kumprice_1.0.1.apk';
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+
+            // Reset modal state when closed
+            setTimeout(() => {
+                agreeCheckbox.checked = false;
+                acceptBtn.disabled = true;
+                downloadBtn.disabled = true;
+                acceptBtn.textContent = 'Accept Terms';
+                acceptBtn.classList.remove('btn-secondary');
+                acceptBtn.classList.add('btn-success');
+            }, 500);
+        });
+
+        // Reset modal when closed
+        document.getElementById('termsModal').addEventListener('hidden.bs.modal', function () {
+            agreeCheckbox.checked = false;
+            acceptBtn.disabled = true;
+            downloadBtn.disabled = true;
+            acceptBtn.textContent = 'Accept Terms';
+            acceptBtn.classList.remove('btn-secondary');
+            acceptBtn.classList.add('btn-success');
+        });
+    </script>
+</body>
+
+</html>
